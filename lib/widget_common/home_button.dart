@@ -1,16 +1,16 @@
 import "package:ecommerce_store/consts/consts.dart";
 import "package:flutter/material.dart";
 
-Widget homeButtons({width, height, icon, title, onPress}) {
+Widget homeButtons({width, height, icon, String? title, onPress}) {
   return Column(
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
       Image.asset(
-        icTodaysDeal,
+        icon,
         width: 26,
       ),
-      5.heightBox,
-      icTodaysDeal.text.fontFamily(semibold).color(darkFontGrey).make()
+      12.heightBox,
+      title!.text.fontFamily(semibold).color(darkFontGrey).make()
     ],
   ).box.rounded.white.size(width, height).make();
 }

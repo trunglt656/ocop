@@ -1,8 +1,9 @@
 import 'package:ecommerce_store/consts/consts.dart';
 import 'package:ecommerce_store/controllers/home_controllers.dart';
 import 'package:ecommerce_store/views/account/account_screen.dart';
+import 'package:ecommerce_store/views/categories_screen/category_screen.dart';
 import 'package:ecommerce_store/views/connect_screen/connect_screen.dart';
-import 'package:ecommerce_store/views/home_screen.dart/home_screen.dart';
+import 'package:ecommerce_store/views/home_screen/home_screen.dart';
 import 'package:ecommerce_store/views/information/information_screen.dart';
 import 'package:ecommerce_store/views/supply/supply_screen.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +30,7 @@ class Home extends StatelessWidget {
 
     var navBody = [
       const HomeScreen(),
-      const ConnectScreen(),
+      const CategoryScreen(),
       const SupplyScreen(),
       const Information(),
       const AccountScreen(),

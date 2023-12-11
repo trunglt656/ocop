@@ -10,7 +10,7 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return bdWiget(
+    return bdWidget(
         child: Scaffold(
             body: Center(
       child: Column(
@@ -18,7 +18,7 @@ class LoginScreen extends StatelessWidget {
           (context.screenHeight * 0.1).heightBox,
           appLogoWidget(),
           10.heightBox,
-          "Dang nhap vao $appname".text.fontFamily(bold).white.size(20).make(),
+          "ĐĂNG NHẬP VÀO $appname".text.fontFamily(bold).white.size(20).make(),
           10.heightBox,
           Column(
             children: [
@@ -32,7 +32,10 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
               5.heightBox,
-              outButton().box.width(context.screenWidth - 50).make()
+              outButton()
+                  .box
+                  .width(context.screenWidth - 50)
+                  .make() // outButton Widget để login
               // outButton(
               //         color: redColor,
               //         title: login,

@@ -22,3 +22,25 @@ const home = "Trang Chủ",
 
 //home screen
 const search = "Tìm kiếm....";
+const todaysDeal = "Khuyến mãi hôm nay";
+const flashSale = "Khuyến mãi";
+const topCategories = "Mặt hàng bán chạy";
+const brands = "Thương hiệu";
+const topSeller = "Hàng tốt";
+const featuredCate = "Sản phẩm đặc sắc";
+const food = "Thực phẩm";
+const herbal = "thảo dược";
+const drinks = "Đồ uống";
+const garment = "may mặc";
+const featuredProducts = "Sản phẩm mới";
+
+//Categorin Screen
+const food1 = "Thực phẩm";
+const herbal1 = "thảo dược";
+const drinks1 = "Đồ uống";
+const garment1 = "may mặc";
+const interior = "Nội thất";
+const service = " Dịch vụ";
+const dryseed = "Đồ khô";
+const spice = "Gia vị";
+const crafts = "Thủ công mĩ nghệ";

@@ -65,6 +65,7 @@ const imgB9 = "assets/images/b9.jpeg";
 const imgB10 = "assets/images/b10.jpeg";
 const imgCod = "assets/images/cod.png";
 const imgFc1 = "assets/images/fc1.jpeg";
+const imgFc1h = "assets/images/fc1h.jpeg";
 const imgFc2 = "assets/images/fc2.jpeg";
 const imgFc3 = "assets/images/fc3.jpeg";
 const imgFc4 = "assets/images/fc4.jpeg";
@@ -85,7 +86,9 @@ const imgNgenius = "assets/images/ngenius.png";
 const imgP1 = "assets/images/p1.jpeg";
 const imgP2 = "assets/images/p2.jpeg";
 const imgP3 = "assets/images/p3.jpeg";
-const imgP4 = "assets/images/p4.jpeg";
+const imgP3h = "assets/images/slider_5.jpg";
+const imgP4 = "assets/images/p4h.jpeg";
+const imgP4h = "assets/images/imgP4h.jpg";
 const imgP5 = "assets/images/p5.jpeg";
 const imgP6 = "assets/images/p6.jpeg";
 const imgP7 = "assets/images/p7.jpeg";
@@ -129,3 +132,6 @@ const imgStripe = "assets/images/stripe.png";
 const imgTwocheckout = "assets/images/twocheckout.png";
 const imgVogue = "assets/images/vogue.png";
 const imgWallet = "assets/images/wallet.png";
+
+//image slider 2
+const imgSlider5 = "assets/images/slider_5.jpg";

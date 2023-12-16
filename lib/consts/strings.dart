@@ -2,21 +2,27 @@ const appname = "OCOP BINH PHUOC";
 const appversion = "Phiên bản 1.0.0";
 const credits = "@TRUNG TRAN";
 
+//signUp and signIn
 const email = "Email";
-const emailHint = 'admin@gmail.com';
+const emailHint = 'email@gmail.com';
 const password = 'Mật khẩu';
+const retypePassword = "Nhập lại mật khẩu";
+const name = "Tên Tài khoản";
+const nameHint = 'Tên tài khoản';
 const passwordHint = "********";
 
 const forgetPass = "Quên mật khẩu";
 const login = "Đăng nhập";
 const signup = "Đăng ký";
 const createNewAccount = "Tạo tài khoản mới";
-const loginWith = "Đăng nhập bằng";
+const loginWith = "Đăng nhập với";
+const privacyPolicy = "Điều khoản";
+const alreadyHaveAccount = 'Đã có tài khoản? ';
 
 // home string
 const home = "Trang Chủ",
     categories = "Kết nối",
-    supply = " Nguồn cung",
+    supply = "Giỏ hàng",
     inf = "Thông tin",
     acount = "Tài khoản";
 
@@ -44,3 +50,11 @@ const service = " Dịch vụ";
 const dryseed = "Đồ khô";
 const spice = "Gia vị";
 const crafts = "Thủ công mĩ nghệ";
+
+// Item Details
+const video = "Video",
+    reviews = "Đánh giá",
+    sellerpolicy = "Chính sách bán hàng",
+    returnpolity = " Chính sách hoàn trả",
+    supporpolity = "Hỗ trợ",
+    productsyoumaylike = "Sản phẩm liên quan";

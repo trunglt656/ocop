@@ -1,5 +1,6 @@
 import 'package:ecommerce_store/consts/consts.dart';
 
+const socialIconList = [icFacebookLogo, icGoogleLogo, icTwitterLogo];
 const slideList = [imgSlider1, imgSlider2, imgSlider3];
 
 // image of slider 2
@@ -33,4 +34,12 @@ const categoriesImages = [
   imgFc7,
   imgFc8,
   imgFc9,
+];
+
+const itemDetailButtonList = [
+  video,
+  reviews,
+  privacyPolicy,
+  returnpolity,
+  supporpolity
 ];

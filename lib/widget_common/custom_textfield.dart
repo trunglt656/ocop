@@ -1,7 +1,7 @@
 import 'package:ecommerce_store/consts/consts.dart';
 import 'package:flutter/material.dart';
 
-Widget customTextField({String? hint, String? title, controller}) {
+Widget  customTextField({String? hint, String? title, controller, isPass}) {
   return Padding(
     padding: const EdgeInsets.all(8.0),
     child: Column(
@@ -10,6 +10,8 @@ Widget customTextField({String? hint, String? title, controller}) {
         title!.text.color(redColor).fontFamily(semibold).size(16).make(),
         5.heightBox,
         TextFormField(
+          obscureText: isPass,
+          controller: controller,
           decoration: InputDecoration(
             hintStyle:
                 const TextStyle(fontFamily: semibold, color: textfieldGrey),

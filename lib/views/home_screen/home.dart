@@ -6,7 +6,6 @@ import 'package:ecommerce_store/views/categories_screen/category_screen.dart';
 import 'package:ecommerce_store/views/connect_screen/connect_screen.dart';
 import 'package:ecommerce_store/views/home_screen/home_screen.dart';
 import 'package:ecommerce_store/views/information/information_screen.dart';
-import 'package:ecommerce_store/views/supply/supply_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

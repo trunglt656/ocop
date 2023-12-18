@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "239080033539",
+    "project_id": "eocop-49fed",
+    "storage_bucket": "eocop-49fed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239080033539:android:07efff7ad14da82b06ed36",
+        "android_client_info": {
+          "package_name": "com.example.ecommerce_store"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFNhTK0mjROj8UfUTJZ1DUcAgv_n7YXAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

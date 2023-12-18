@@ -18,6 +18,8 @@ const createNewAccount = "Tạo tài khoản mới";
 const loginWith = "Đăng nhập với";
 const privacyPolicy = "Điều khoản";
 const alreadyHaveAccount = 'Đã có tài khoản? ';
+const loggedin = "Đăng nhập thành công";
+const loggedout = "Đăng xuất thành công";
 
 // home string
 const home = "Trang Chủ",
@@ -58,3 +60,9 @@ const video = "Video",
     returnpolity = " Chính sách hoàn trả",
     supporpolity = "Hỗ trợ",
     productsyoumaylike = "Sản phẩm liên quan";
+
+//proile screen
+const logout = "Đăng xuất";
+const wishlist = "Sản phẩm yêu thích",
+    order = "Đơn hàng của tôi",
+    messagse = "Liên hệ";

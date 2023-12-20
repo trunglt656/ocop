@@ -3,6 +3,7 @@ import 'package:ecommerce_store/consts/list.dart';
 import 'package:ecommerce_store/controllers/auth_controller.dart';
 import 'package:ecommerce_store/views/auth_screen/login_screen.dart';
 import 'package:ecommerce_store/views/profile_screen/components/details.dart';
+import 'package:ecommerce_store/views/profile_screen/edit_profile.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -18,13 +19,15 @@ class AccountScreen extends StatelessWidget {
           color: Colors.purple.shade100,
           child: Column(
             children: [
-              // Sửa đổi
+              // Sửa đổi button
               const Align(
                   alignment: Alignment.topRight,
                   child: Icon(
                     Icons.edit,
                     color: Colors.black,
-                  )).onTap(() {}),
+                  )).onTap(() {
+                Get.to(() => EditProfileScreen());
+              }),
               // Thông tin người dùng
               Row(
                 // mainAxisAlignment: MainAxisAlignment.center,

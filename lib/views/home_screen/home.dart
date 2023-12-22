@@ -5,6 +5,7 @@ import 'package:ecommerce_store/views/cart_screen/cart_screen.dart';
 import 'package:ecommerce_store/views/categories_screen/category_screen.dart';
 import 'package:ecommerce_store/views/home_screen/home_screen.dart';
 import 'package:ecommerce_store/views/information/information_screen.dart';
+import 'package:ecommerce_store/widget_common/exit_dialog.dart';
 import 'package:get/get.dart';
 
 class Home extends StatelessWidget {
@@ -34,24 +35,31 @@ class Home extends StatelessWidget {
       const AccountScreen(),
     ];
 
-    return Scaffold(
-      body: Column(
-        children: [
-          Obx(() => Expanded(
-              child: navBody.elementAt(controller.currentNavIndex.value))),
-        ],
-      ),
-      bottomNavigationBar: Obx(
-        () => BottomNavigationBar(
-          currentIndex: controller.currentNavIndex.value,
-          type: BottomNavigationBarType.fixed,
-          backgroundColor: whiteColor,
-          selectedItemColor: redColor,
-          unselectedItemColor: Colors.blue,
-          items: navBarItem,
-          onTap: (value) {
-            controller.currentNavIndex.value = value;
-          },
+    // ignore: deprecated_member_use
+    return WillPopScope(
+      onWillPop: () async {
+        showDialog(context: context, builder: (context) => exitDialog());
+        return false;
+      },
+      child: Scaffold(
+        body: Column(
+          children: [
+            Obx(() => Expanded(
+                child: navBody.elementAt(controller.currentNavIndex.value))),
+          ],
+        ),
+        bottomNavigationBar: Obx(
+          () => BottomNavigationBar(
+            currentIndex: controller.currentNavIndex.value,
+            type: BottomNavigationBarType.fixed,
+            backgroundColor: whiteColor,
+            selectedItemColor: redColor,
+            unselectedItemColor: Colors.blue,
+            items: navBarItem,
+            onTap: (value) {
+              controller.currentNavIndex.value = value;
+            },
+          ),
         ),
       ),
     );

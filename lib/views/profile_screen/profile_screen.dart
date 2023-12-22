@@ -36,12 +36,11 @@ class AccountScreen extends StatelessWidget {
                           const Align(
                               alignment: Alignment.topRight,
                               child: Icon(
-                                Icons.edit,
+                                Icons.edit, //edit profile
                                 color: Colors.black,
                               )).onTap(() {
                             controller.nameController.text = data['name'];
-                            controller.passwordController.text =
-                                data['password'];
+
                             Get.to(() => EditProfileScreen(data: data));
                           }),
                           // Thông tin người dùng

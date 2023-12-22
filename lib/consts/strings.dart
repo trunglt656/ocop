@@ -65,4 +65,6 @@ const video = "Video",
 const logout = "Đăng xuất";
 const wishlist = "Sản phẩm yêu thích",
     order = "Đơn hàng của tôi",
-    messagse = "Liên hệ";
+    messagse = "Liên hệ",
+    oldpass = 'Mật khẩu cũ',
+    newpass = 'Mật khẩu mới';

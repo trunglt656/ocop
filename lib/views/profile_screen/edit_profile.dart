@@ -44,7 +44,7 @@ class EditProfileScreen extends StatelessWidget {
           ourButton(
               color: redColor,
               onPress: () {
-                controller.changeImage(context); //thay image profile
+                controller.changeImage(context); //edit image profile
               },
               textColor: whiteColor,
               title: "Thay đổi"),
@@ -57,9 +57,15 @@ class EditProfileScreen extends StatelessWidget {
             isPass: false,
           ),
           customTextField(
-            controller: controller.passwordController,
-            hint: password,
-            title: password,
+            controller: controller.oldpassController,
+            hint: passwordHint,
+            title: oldpass,
+            isPass: true, // edit pass
+          ),
+          customTextField(
+            controller: controller.newpassController,
+            hint: passwordHint,
+            title: newpass,
             isPass: true,
           ),
           controller.isLoading.value
@@ -73,13 +79,31 @@ class EditProfileScreen extends StatelessWidget {
                       color: Colors.green.shade300,
                       onPress: () async {
                         controller.isLoading(true);
-                        await controller.uploadProfileImage();
-                        await controller.updateProfile(
-                          imgUrl: controller.profileImgLink,
-                          name: controller.nameController.text,
-                          password: controller.passwordController.text,
-                        );
-                        VxToast.show(context, msg: "Cập nhật thành công");
+
+                        // khong chon dc anh
+                        if (controller.profileImgPath.value.isNotEmpty) {
+                          await controller.uploadProfileImage();
+                        } else {
+                          controller.profileImgLink = data['imageUrl'];
+                        }
+
+                        // password ko tim thay trong database
+                        if (data['password'] ==
+                            controller.oldpassController.text) {
+                          await controller.changeAuthPassword(
+                            email: data['email'],
+                            password: controller.oldpassController.text,
+                            newpassword: controller.newpassController.text,
+                          );
+                          await controller.updateProfile(
+                              imgUrl: controller.profileImgLink,
+                              name: controller.nameController.text,
+                              password: controller.newpassController.text);
+                          VxToast.show(context, msg: "Cập nhật thành công");
+                        } else {
+                          VxToast.show(context, msg: "Mật khẩu hiện tại sai");
+                          controller.isLoading(false);
+                        }
                       },
                       textColor: whiteColor,
                       title: "Lưu"),

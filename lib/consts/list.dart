@@ -46,3 +46,6 @@ const itemDetailButtonList = [
 
 const profileButtonsList = [order, wishlist, messagse];
 const profileButtonsicon = [icOrder, icOrder, icMessages];
+
+const paymentMethodList = [imgPayM1, imgPayM2, imgPayM3];
+const paymentMethod = [momo, banking, cod];

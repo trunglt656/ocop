@@ -1,9 +1,7 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:ecommerce_store/consts/consts.dart';
 import 'package:ecommerce_store/consts/list.dart';
 import 'package:ecommerce_store/controllers/product_controller.dart';
 import 'package:ecommerce_store/widget_common/out_button.dart';
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 //trang chi tiết sản phẩm
@@ -16,7 +14,8 @@ class ItemDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     var controller = Get.find<ProductController>();
     // ignore: deprecated_member_use
-    return WillPopScope( // reset so luong sp 
+    return WillPopScope(
+      // reset so luong sp
       onWillPop: () async {
         controller.resetValues();
         return true;
@@ -290,18 +289,19 @@ class ItemDetails extends StatelessWidget {
                   color: redColor,
                   onPress: () {
                     controller.addToCart(
-                        context: context,
-                        img: data['p_imgs'][0],
-                        qty: controller.quantity.value,
-                        sellername: data['p_seller'],
-                        title: data['p_name'],
-                        tprice: controller.totalPrice.value);
+                      context: context,
+                      img: data['p_imgs'][0],
+                      qty: controller.quantity.value,
+                      sellername: data['p_seller'],
+                      title: data['p_name'],
+                      tprice: controller.totalPrice.value,
+                      // vendorID: data['vendor_id'],
+                    );
+
                     VxToast.show(context, msg: "Đã thêm vào giỏ hàng");
                   },
                   textColor: whiteColor,
-                  title: "Thêm Vào Giỏ Hàng"
-                  // color: redColor,
-                  ),
+                  title: "Thêm Vào Giỏ Hàng"),
             )
           ])),
     );

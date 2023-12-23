@@ -64,7 +64,16 @@ const video = "Video",
 //proile screen
 const logout = "Đăng xuất";
 const wishlist = "Sản phẩm yêu thích",
-    order = "Đơn hàng của tôi",
+    order = "orders",
     messagse = "Liên hệ",
     oldpass = 'Mật khẩu cũ',
     newpass = 'Mật khẩu mới';
+
+//paymentMethod screen
+const momo = "Thanh toán bằng Momo",
+    banking = "Thanh toán qua ngân hàng",
+    cod = "Thanh toán bằng tiền mặt";
+
+//shipping method , for cart controller
+const economi_shipping = 'Giao hàng tiếp kiệm',
+    fast_shipping = "Giao hàng nhanh";

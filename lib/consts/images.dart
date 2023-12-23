@@ -95,6 +95,11 @@ const imgP7 = "assets/images/p7.jpeg";
 const imgPayfast = "assets/images/payfast.png";
 const imgPayhere = "assets/images/payhere.png";
 const imgPaypal = "assets/images/paypal.png";
+
+const imgPayM1 = "assets/images/paymentMethod_1.jpg";
+const imgPayM2 = "assets/images/paymentMethod_2.jpg";
+const imgPayM3 = "assets/images/paymentMethod_3.jpg";
+
 const imgPaystack = "assets/images/paystack.png";
 const imgPaytm = "assets/images/paytm.png";
 const imgPi1 = "assets/images/pi1.jpg";

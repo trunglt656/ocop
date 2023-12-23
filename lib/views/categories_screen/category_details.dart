@@ -79,12 +79,12 @@ class CategoryDetails extends StatelessWidget {
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
-                                      Image.asset(
-                                        imgP4h,
+                                      Image.network(
+                                        data[index]["p_imgs"][0],
                                         height: 170,
                                         width: 200,
                                         fit: BoxFit.cover,
-                                      ),
+                                      ).box.make(),
                                       10.heightBox,
                                       const Spacer(),
                                       "${data[index]['p_name']}"

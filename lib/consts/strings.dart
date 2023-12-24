@@ -76,4 +76,5 @@ const momo = "Thanh toán bằng Momo",
 
 //shipping method , for cart controller
 const economi_shipping = 'Giao hàng tiếp kiệm',
-    fast_shipping = "Giao hàng nhanh";
+    fast_shipping = "Giao hàng nhanh",
+    delivering = 'Đang giao hàng';

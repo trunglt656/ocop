@@ -290,12 +290,12 @@ class ItemDetails extends StatelessWidget {
                   onPress: () {
                     controller.addToCart(
                       context: context,
+                      // vendorID: data['vendor_id'],
                       img: data['p_imgs'][0],
                       qty: controller.quantity.value,
                       sellername: data['p_seller'],
                       title: data['p_name'],
                       tprice: controller.totalPrice.value,
-                      // vendorID: data['vendor_id'],
                     );
 
                     VxToast.show(context, msg: "Đã thêm vào giỏ hàng");

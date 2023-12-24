@@ -29,4 +29,12 @@ class FirestoreServices {
   static deleteDocument(docId) {
     return firestore.collection(cartCollection).doc(docId).delete();
   }
+
+  //lấy thông tin order -> orderScreen
+  static getAllOrders() {
+    return firestore
+        .collection(ordersCollection)
+        .where('order_by', isEqualTo: currentUser!.uid)
+        .snapshots();
+  }
 }

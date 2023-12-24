@@ -5,7 +5,6 @@ class HomeController extends GetxController {
   @override
   void onInit() {
     getUserName();
-    // TODO: implement onInit
     super.onInit();
   }
 
@@ -19,8 +18,8 @@ class HomeController extends GetxController {
         .where("id", isEqualTo: currentUser!.uid)
         .get()
         .then((value) {
-      if (value.docs.isEmpty) {
-        return value.docs.single['Name'];
+      if (value.docs.isNotEmpty) {
+        return value.docs.single['name'];
       }
     });
     username = n;

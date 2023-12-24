@@ -5,6 +5,7 @@ import 'package:ecommerce_store/controllers/auth_controller.dart';
 import 'package:ecommerce_store/controllers/profile_controller.dart';
 import 'package:ecommerce_store/services/firestore_services.dart';
 import 'package:ecommerce_store/views/auth_screen/login_screen.dart';
+import 'package:ecommerce_store/views/order_screen/order_screen.dart';
 import 'package:ecommerce_store/views/profile_screen/components/details_cart.dart';
 import 'package:ecommerce_store/views/profile_screen/edit_profile.dart';
 import 'package:get/get.dart';
@@ -104,9 +105,12 @@ class AccountScreen extends StatelessWidget {
                                   title: "Trong danh sách yêu thích",
                                   width: context.screenWidth / 3.5),
                               detailsCart(
-                                  count: data["order_count"],
-                                  title: "Đơn hàng của tôi",
-                                  width: context.screenWidth / 3.5),
+                                      count: data["order_count"],
+                                      title: "Đơn hàng của tôi",
+                                      width: context.screenWidth / 3.5)
+                                  .onTap(() {
+                                Get.to(() => const OrdersScreen());
+                              }),
                             ],
                           ),
                           // Text đơn hàng của tôi,....

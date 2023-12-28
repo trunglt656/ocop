@@ -3,7 +3,6 @@ import 'package:ecommerce_store/consts/list.dart';
 import 'package:ecommerce_store/controllers/product_controller.dart';
 import 'package:ecommerce_store/views/categories_screen/category_details.dart';
 import 'package:ecommerce_store/widget_common/bg_widget.dart';
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class CategoryScreen extends StatelessWidget {

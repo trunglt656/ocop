@@ -23,7 +23,7 @@ const loggedout = "Đăng xuất thành công";
 
 // home string
 const home = "Trang Chủ",
-    categories = "Kết nối",
+    categories = "Sản Phẩm Ocop",
     supply = "Giỏ hàng",
     inf = "Thông tin",
     acount = "Tài khoản";
@@ -40,18 +40,18 @@ const food = "Thực phẩm";
 const herbal = "thảo dược";
 const drinks = "Đồ uống";
 const garment = "may mặc";
-const featuredProducts = "Sản phẩm mới";
+const featuredProducts = "Sản phẩm đặc sắc";
 
 //Categorin Screen
-const food1 = "Thực phẩm";
-const herbal1 = "thảo dược";
-const drinks1 = "Đồ uống";
-const garment1 = "may mặc";
-const interior = "Nội thất";
-const service = " Dịch vụ";
-const dryseed = "Đồ khô";
-const spice = "Gia vị";
-const crafts = "Thủ công mĩ nghệ";
+const dl = "Dược liệu";
+const tp = "Thực phẩm";
+const du = "Đồ uống";
+const svc = "Sinh vật cảnh";
+const dv = "Dịch vụ";
+const sp1 = "Vải-may mặc";
+const sp2 = "Nội thất";
+const sp3 = "Trang trí";
+const sp4 = "Bánh kẹo";
 
 // Item Details
 const video = "Video",

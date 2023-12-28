@@ -50,27 +50,32 @@
         },
             
             {
-                "name": "Sản phẩm 1",
+                "name": "Vải-may mặc",
                 "subcategory": [
-                    "Sản phẩm khác"
+                    "Vải",
+                    "May mặc"
                 ]
             },
             {
-                "name": "Sản phẩm 2",
+                "name": "Nội thất",
                 "subcategory": [
-                    "Sản phẩm khác"
+                    "Nội thất gỗ",
+                    "Nội thất khác"
                 ]
             },
             {
-                "name": "Sản phẩm 3",
+                "name": "Trang trí",
                 "subcategory": [
-                    "Sản phẩm khác"
+                    "Trang trí gỗ",
+                    "Trang trí khác"
                 ]
             },
             {
-                "name": "Sản phẩm 4",
+                "name": "Bánh kẹo",
                 "subcategory": [
-                    "Sản phẩm khác"
+                    "Bánh kẹo ngọt",
+                    "Bánh kẹo mặn"
+
                 ]
             }
     ]

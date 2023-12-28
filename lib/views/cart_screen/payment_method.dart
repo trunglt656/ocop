@@ -30,7 +30,7 @@ class PaymentMethods extends StatelessWidget {
                           totalAmount: controller.totalP.value);
                       await controller.clearCart();
                       VxToast.show(context, msg: "Đặt hàng thành công");
-                      
+
                       Get.offAll(const Home());
                     },
                     color: redColor,

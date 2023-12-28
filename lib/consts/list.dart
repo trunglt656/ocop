@@ -9,31 +9,23 @@ const slideList2 = [imgSlider5, imgSlider2, imgSlider3];
 const featuredList1 = [imgS1, imgS2, imgS3];
 const featuredList2 = [imgS4, imgS5, imgS6];
 
+//danh muc homescreen
 const freaturedTitles1 = [food, herbal, drinks, garment];
-const freaturedTitles2 = [food, herbal, drinks, garment];
+// const freaturedTitles2 = [food, herbal, drinks, garment];
 
-const categoriesList = [
-  food1,
-  herbal1,
-  drinks1,
-  garment1,
-  interior,
-  service,
-  dryseed,
-  spice,
-  crafts
-];
+const categoriesList = [dl, tp, du, svc, dv, sp1, sp2, sp3, sp4];
 
+//Imglogo cate screen
 const categoriesImages = [
-  imgFc1,
-  imgFc2,
-  imgFc3,
-  imgFc4,
-  imgFc5,
-  imgFc6,
-  imgFc7,
-  imgFc8,
-  imgFc9,
+  imgdllogo,
+  imgtplogo,
+  imgdulogo,
+  imgsvclogo,
+  imgdvlogo,
+  imgvmlogo,
+  imgntlogo,
+  imgttlogo,
+  imgbklogo,
 ];
 
 const itemDetailButtonList = [

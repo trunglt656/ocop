@@ -140,3 +140,14 @@ const imgWallet = "assets/images/wallet.png";
 
 //image slider 2
 const imgSlider5 = "assets/images/slider_5.jpg";
+
+//image mi
+const imgdllogo = "assets/images/duoclieu.jpg";
+const imgtplogo = "assets/images/thucpham.jpg";
+const imgdulogo = "assets/images/douong.jpg";
+const imgsvclogo = "assets/images/sinhvat.jpg";
+const imgdvlogo = "assets/images/dichvu.jpg";
+const imgvmlogo = "assets/images/vaimay.jpg";
+const imgntlogo = "assets/images/noithat.jpg";
+const imgttlogo = "assets/images/trangtri.jpg";
+const imgbklogo = "assets/images/banhkeo.jpg";

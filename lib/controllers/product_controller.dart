@@ -10,22 +10,18 @@ class ProductController extends GetxController {
 
   getSubCategories(title) async {
     subcat.clear();
-    try {
-      var data =
-          await rootBundle.loadString("lib/services/category_model.json");
-      var decoded = categoryModelFromJson(data);
-      var s =
-          decoded.categories.where((element) => element.name == title).toList();
 
-      if (s.isNotEmpty) {
-        for (var e in s[0].subcategory) {
-          subcat.add(e);
-        }
-      } else {
-        print('Không tìm thấy danh mục có tiêu đề là $title');
+    var data = await rootBundle.loadString("lib/services/category_model.json");
+    var decoded = categoryModelFromJson(data);
+    var s =
+        decoded.categories.where((element) => element.name == title).toList();
+
+    if (s.isNotEmpty) {
+      for (var e in s[0].subcategory) {
+        subcat.add(e);
       }
-    } catch (e) {
-      print('Lỗi khi xử lý dữ liệu: $e');
+    } else {
+      print('Không tìm thấy danh mục có tiêu đề là $title');
     }
   }
 
@@ -45,15 +41,16 @@ class ProductController extends GetxController {
     totalPrice.value = price * quantity.value;
   }
 
-  addToCart({title, img, sellername, qty, tprice, context, vendorID}) async {
+  addToCart({title, img, sellername, qty, tprice, context}) async {
+    // vendorID
     await firestore.collection(cartCollection).doc().set({
       'title': title,
       'img': img,
       'sellername': sellername,
       'qty': qty,
-      'vendor_id': vendorID,
+      // 'vendor_id': vendorID,
       'tprice': tprice,
-      'added_by': currentUser!.uid  
+      'added_by': currentUser!.uid
     }).catchError((error) {
       VxToast.show(context, msg: error.toString());
     });

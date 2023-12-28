@@ -1,5 +1,6 @@
 import 'package:ecommerce_store/consts/consts.dart';
 import 'package:ecommerce_store/widget_common/out_button.dart';
+import 'package:get/get.dart';
 
 //thoat ưng dung (back)
 Widget exitDialog() {
@@ -17,7 +18,9 @@ Widget exitDialog() {
         children: [
           ourButton(
               color: redColor,
-              onPress: () {},
+              onPress: () {
+                Get.back();
+              },
               textColor: whiteColor,
               title: "Có"),
           ourButton(

@@ -37,4 +37,19 @@ class FirestoreServices {
         .where('order_by', isEqualTo: currentUser!.uid)
         .snapshots();
   }
+
+  static allproducts() {
+    return firestore.collection(productsCollection).snapshots();
+  }
+
+  static getFeaturedProducts() {
+    return firestore
+        .collection(productsCollection)
+        .where('is_featured', isEqualTo: true)
+        .get();
+  }
+
+  static searchProducts(title) {
+    return firestore.collection(productsCollection).get();
+  }
 }
